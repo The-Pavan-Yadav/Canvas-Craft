@@ -1,16 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Canvas Craft - Collage Maker
 
-# Run and deploy your AI Studio app
+Canvas Craft is a modern Android collage maker application built using Kotlin and Jetpack Compose. The app allows users to create stylish photo collages using multiple grid layouts with a smooth and modern editing experience.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/313a5d44-38d2-490a-a8b7-8d10ce912781
+* 2 Grid, 3 Grid, 4 Grid, and 5 Grid layouts
+* Modern dark-themed UI
+* Gallery image picker integration
+* Add photos directly into collage frames
+* Rounded image frames
+* Smooth Jetpack Compose UI
+* Export collage as high-quality PNG
+* Save exported collage directly to gallery
+* Material 3 design
+* Responsive layout system
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+* Kotlin
+* Jetpack Compose
+* Material 3
+* Coil Image Loading
+* Android Photo Picker API
+* MediaStore API
+
+## Screenshots
+
+* Layout Selection Screen
+* Collage Editor
+* Image Import
+* Export Feature
+
+## Future Improvements
+
+* Drag and zoom images inside frames
+* Text overlays
+* Stickers and filters
+* Custom spacing slider
+* Corner radius controls
+* Gradient backgrounds
+* More collage templates
+
+## Installation
+
+1. Clone the repository
+2. Open in Android Studio
+3. Sync Gradle
+4. Run on Android device or emulator
+
+## Author
+
+Made with ❤️ by Pavan
+
 
 
 1. Open Android Studio
