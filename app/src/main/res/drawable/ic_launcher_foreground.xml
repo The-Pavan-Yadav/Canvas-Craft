@@ -1,30 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+
+    <!-- Card 1 (Left card, rotated -12 degrees, modern minimal style) -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-12"
+        android:translateX="-8"
+        android:translateY="2">
+        <!-- Rounded card background -->
+        <path
+            android:fillColor="#15132D"
+            android:pathData="M 39 34 h 30 a 6 6 0 0 1 6 6 v 40 a 6 6 0 0 1 -6 6 h -30 a 6 6 0 0 1 -6 -6 v -40 a 6 6 0 0 1 6 -6 Z" />
+        <!-- Sleek colored border line -->
+        <path
+            android:strokeColor="#3B82F6"
+            android:strokeWidth="1.5"
+            android:fillColor="#00000000"
+            android:pathData="M 39 34 h 30 a 6 6 0 0 1 6 6 v 40 a 6 6 0 0 1 -6 6 h -30 a 6 6 0 0 1 -6 -6 v -40 a 6 6 0 0 1 6 -6 Z" />
+        <!-- Minimal landscape mountain representation inside -->
+        <path
+            android:fillColor="#2563EB"
+            android:pathData="M 41 72 L 49 61 L 55 67 L 65 54 L 71 72 Z" />
+    </group>
+
+    <!-- Card 2 (Right card, rotated 12 degrees, sleek magenta style) -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="12"
+        android:translateX="8"
+        android:translateY="-2">
+        <!-- Rounded card background -->
+        <path
+            android:fillColor="#1B153A"
+            android:pathData="M 39 34 h 30 a 6 6 0 0 1 6 6 v 40 a 6 6 0 0 1 -6 6 h -30 a 6 6 0 0 1 -6 -6 v -40 a 6 6 0 0 1 6 -6 Z" />
+        <!-- Sleek magenta border line -->
+        <path
+            android:strokeColor="#EC4899"
+            android:strokeWidth="1.5"
+            android:fillColor="#00000000"
+            android:pathData="M 39 34 h 30 a 6 6 0 0 1 6 6 v 40 a 6 6 0 0 1 -6 6 h -30 a 6 6 0 0 1 -6 -6 v -40 a 6 6 0 0 1 6 -6 Z" />
+        <!-- Glowing gradient sun/avatar node in card -->
+        <path
+            android:fillColor="#F43F5E"
+            android:pathData="M 54 44 A 5 5 0 1 1 54 54 A 5 5 0 1 1 54 44 Z" />
+    </group>
+
+    <!-- Card 3 (Center foreground card, perfectly aligned, fuchsia/indigo gradient) -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="0">
+        <!-- Main card base layout with custom vector gradient fill -->
+        <path
+            android:pathData="M 36 30 h 36 a 7 7 0 0 1 7 7 v 46 a 7 7 0 0 1 -7 7 h -36 a 7 7 0 0 1 -7 -7 v -46 a 7 7 0 0 1 7 -7 Z"
+            android:strokeWidth="2.2"
+            android:strokeColor="#FFFFFF">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="36"
+                    android:startY="30"
+                    android:endX="79"
+                    android:endY="90">
+                    <item android:color="#8B5CF6" android:offset="0.0" />
+                    <item android:color="#EC4899" android:offset="1.0" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        
+        <!-- Elegant Photo Grid/Aperture Center Icon -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,42 C47.37,42 42,47.37 42,54 C42,60.63 47.37,66 54,66 C60.63,66 66,60.63 66,54 C66,47.37 60.63,42 54,42 Z M54,61.5 C49.85,61.5 46.5,58.15 46.5,54 C46.5,49.85 49.85,46.5 54,46.5 C58.15,46.5 61.5,49.85 61.5,54 C61.5,58.15 58.15,61.5 54,61.5 Z" />
+        
+        <!-- Minimal stylized grid separator lines inside aperture -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1.2"
+            android:fillColor="#00000000"
+            android:pathData="M54,46.5 L54,61.5 M46.5,54 L61.5,54" />
+    </group>
+
+    <!-- Floating Sparkles (auto-awesome/creativity indicators) -->
     <path
-        android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:fillColor="#FBBF24"
+        android:pathData="M 79 27 Q 79 32 84 32 Q 79 32 79 37 Q 79 32 74 32 Q 79 32 79 27 Z" />
+    <path
+        android:fillColor="#34D399"
+        android:pathData="M 27 63 Q 27 66 30 66 Q 27 66 27 69 Q 27 66 24 66 Q 27 66 27 63 Z" />
 </vector>
